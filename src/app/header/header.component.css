@@ -1,4 +1,5 @@
 .header {
+  /*width: 100%;*/
   padding: 2% 6%;
   margin: 2% 6%;
   color: #000;
@@ -10,64 +11,68 @@ h1 {
   justify-content: center;
 }
 
-.header-bottom-row {
-  display: table;
-  width: 100%; /*Optional*/
-  table-layout: fixed;
-  margin: 2% 0;
-}
-
-.header-column {
-  display: table-cell;
-}
-
-.socials  {
+nav {
   display: flex;
-  justify-content: flex-end;
-
-}
-.socials a {
-  margin: 0 2%;
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%
 }
 
-
-fa-icon {
-  display: inline-block;
-  margin: 2% 2%;
-}
-
-nav{
-  display: flex;
-  justify-content: center;
-  margin: 2% 6%;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
+.nav-links {
   list-style: none;
+
+}
+
+.nav-links li{
   display: inline-block;
-  padding: 8px 12px;
+  padding: 0 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
-  margin: 0 6px;
-}
-
-a {
-  text-decoration: none;
   color: #000;
+  font-size: 12px;
 }
 
-a:hover, fa-icon:hover {
+.nav-links li a:hover{
   color: grey;
 }
 
-@media(max-width: 400px) {}
+
+.pseudo-socials {
+  padding: 0 18px;
+  color: transparent;
+}
+
+.socials fa-icon {
+  padding: 0 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.socials fa-icon:hover {
+  color: grey;
+}
+
+@media(max-width: 700px) {
+  .socials fa-icon {
+    display: none;
+  }
+
+  .pseudo-socials {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav-links li{
+    display: block;
+
+  }
 
 
-
+}
 
