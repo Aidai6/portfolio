@@ -1,0 +1,29 @@
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0 50px;
+}
+
+.col-1 {
+  flex-basis: 68%;
+  padding: 0 2px;
+}
+
+.col-2 {
+  flex-basis: 28%;
+  padding: 0 2px;}
+
+p{
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  float: start;
+}
+
+
